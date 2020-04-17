@@ -8,8 +8,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <GetData name={data} age={19} job="étudiante"/>
+
+        <GetData fullname={data} age={19} profession="étudiante"/>
         <img src={photo}  alt='' />
+        
       </header>
     </div>
   );
