@@ -1,23 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+import GetData from './profile.js';
 import './App.css';
+import photo from './photo.png';
 
+const data={firstname:'Nadia', lastname:'Rahmeni'}
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <GetData name={data} age={19} job="étudiante"/>
+        <img src={photo}  alt='' />
       </header>
     </div>
   );
